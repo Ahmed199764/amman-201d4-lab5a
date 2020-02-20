@@ -87,8 +87,16 @@ Test this function by hand in the console to get it working, and when you think 
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-
+var x = sumAndMultiply(2,3,4)[0];
+var q = testArray[0];
+var w = testArray[1];
+var a = testArray[2];
+var msg = `${q},${w},${a} was passed in as an array of numbers, and ${x} is their sum.`;
+console.log(msg);
+var array =[x,msg];
+return array;
 }
+testSumArray();
 
 // Here is the test for sumArray(); uncomment it to run it
 
