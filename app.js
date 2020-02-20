@@ -57,8 +57,16 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-
+    //4 and 7 and 5 sum to 16.
+var x = sum(a ,sum(b,c)[0])[0];
+var message =`${a} and ${b} and ${c} sum to ${x}.`;
+   //4 and 7 and 5 mult to 140
+var z = multiply(a ,multiply(b,c)[0])[0];
+var message1 =`The product of ${a} and ${b} and ${c} is ${z}.`;
+return [x,z,message,message1];
 }
+testSumAndMultiply(4,7,5);
+
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
 // testSumAndMultiply(4,7,5);
