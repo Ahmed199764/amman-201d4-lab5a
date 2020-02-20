@@ -92,7 +92,6 @@ var q = testArray[0];
 var w = testArray[1];
 var a = testArray[2];
 var msg = `${q},${w},${a} was passed in as an array of numbers, and ${x} is their sum.`;
-console.log(msg);
 var array =[x,msg];
 return array;
 }
@@ -116,8 +115,15 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-
+    var x = sumAndMultiply(2,3,4)[1];
+    var q = testArray[0];
+    var w = testArray[1];
+    var a = testArray[2];
+    var msg = `The numbers ${q},${w},${a} have a product of ${x}.`;
+    var array =[x,msg];
+    return array;
 }
+testMultiplyArray(); 
 
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyArray(testArray);
