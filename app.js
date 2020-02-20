@@ -118,8 +118,8 @@ function multiplyArray(multArr) { //eslint-disable-line
     var x = sumAndMultiply(2,3,4)[1];
     var q = testArray[0];
     var w = testArray[1];
-    var a = testArray[2];
-    var msg = `The numbers ${q},${w},${a} have a product of ${x}.`;
+    var v = testArray[2];
+    var msg = `The numbers ${q},${w},${v} have a product of ${x}.`;
     var array =[x,msg];
     return array;
 }
