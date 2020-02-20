@@ -15,7 +15,7 @@ function sum(a, b) { //eslint-disable-line
     return [theSum, message];
 }
 
-testSum(4,7);
+testSum();
 
 // Here is the test for sum(); uncomment it to run it
 // testSum(4, 7);
@@ -32,8 +32,12 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-
+var TheMult= a * b;
+// ' The product of 5 and 9 is 45. '
+var message = `The product of ${a} and ${b} is ${TheMult}.`;
+return [TheMult, message];
 }
+testMultiply(5,9);
 
 // Here is the test for multiply(); uncomment it to run it
 // testMultiply(5,9);
